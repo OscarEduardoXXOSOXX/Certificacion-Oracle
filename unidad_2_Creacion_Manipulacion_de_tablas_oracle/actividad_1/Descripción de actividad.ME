@@ -1,0 +1,47 @@
+Actividad 1. Creación de tablas para la gestión de proveedores y auditoría de inventario
+
+
+Caso
+Como miembro del equipo de tecnología en Organic Shop, se te ha encargado la creación de una base de datos que permita registrar proveedores y llevar un control detallado de las entradas y salidas de inventario. Esto optimizará la trazabilidad de productos y la gestión de inventario, soportando grandes volúmenes de datos y permitiendo consultas rápidas y precisas. Para lograrlo, deberás desarrollar las tablas proveedores y auditoria_stock y establecer las relaciones necesarias con las tablas existentes en la base de datos.
+
+ 
+
+Instrucciones
+Emplear script inicial
+
+Diseña una tabla llamada proveedores para almacenar información de cada proveedor de productos, con la siguiente estructura:
+
+id_proveedor (número entero, clave primaria)
+
+nombre_proveedor (texto, hasta 50 caracteres)
+
+telefono (texto, hasta 15 caracteres)
+
+email (texto, hasta 50 caracteres)
+
+direccion (texto, hasta 100 caracteres)
+
+Añade una columna id_proveedor en la tabla producto para indicar el proveedor correspondiente a cada producto. Define una clave foránea en producto que relacione id_proveedor con proveedores(id_proveedor).
+
+
+Diseña una tabla llamada auditoria_stock para registrar los cambios en el inventario de productos, con la siguiente estructura:
+
+id_auditoria (número entero, clave primaria)
+
+id_producto (número entero, clave foránea que referencia producto(id_producto))
+
+fecha_cambio (tipo DATE, para registrar la fecha del cambio en inventario)
+
+tipo_cambio (texto, hasta 10 caracteres, valores posibles: 'Entrada' o 'Salida')
+
+cantidad_cambiada (número entero, que indique la cantidad de unidades agregadas o retiradas del stock)
+
+observaciones (texto, hasta 100 caracteres, para notas adicionales sobre el cambio)
+
+Establece una clave foránea en auditoria_stock que relacione id_producto con producto(id_producto).
+
+
+
+Asegúrate de que las restricciones de integridad referencial funcionan correctamente insertando datos de prueba en las tablas proveedores, producto y auditoria_stock. Esta verificación es opcional en esta actividad.
+
+Documenta los pasos de creación de cada tabla y las relaciones en un archivo .sql.
