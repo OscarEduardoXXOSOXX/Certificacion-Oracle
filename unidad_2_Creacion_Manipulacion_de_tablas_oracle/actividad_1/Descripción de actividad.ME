@@ -2,14 +2,20 @@ Actividad 1. Creación de tablas para la gestión de proveedores y auditoría de
 
 
 Caso
-Como miembro del equipo de tecnología en Organic Shop, se te ha encargado la creación de una base de datos que permita registrar proveedores y llevar un control detallado de las entradas y salidas de inventario. Esto optimizará la trazabilidad de productos y la gestión de inventario, soportando grandes volúmenes de datos y permitiendo consultas rápidas y precisas. Para lograrlo, deberás desarrollar las tablas proveedores y auditoria_stock y establecer las relaciones necesarias con las tablas existentes en la base de datos.
+Como miembro del equipo de tecnología en Organic Shop, se te ha encargado la creación de una base 
+de datos que permita registrar proveedores y llevar un control detallado de las entradas y salidas 
+de inventario. Esto optimizará la trazabilidad de productos y la gestión de inventario, soportando 
+grandes volúmenes de datos y permitiendo consultas rápidas y precisas. Para lograrlo, deberás 
+desarrollar las tablas proveedores y auditoria_stock y establecer las relaciones necesarias con las 
+tablas existentes en la base de datos.
 
  
 
 Instrucciones
 Emplear script inicial
 
-Diseña una tabla llamada proveedores para almacenar información de cada proveedor de productos, con la siguiente estructura:
+Diseña una tabla llamada proveedores para almacenar información de cada proveedor de productos, 
+con la siguiente estructura:
 
 id_proveedor (número entero, clave primaria)
 
@@ -21,10 +27,12 @@ email (texto, hasta 50 caracteres)
 
 direccion (texto, hasta 100 caracteres)
 
-Añade una columna id_proveedor en la tabla producto para indicar el proveedor correspondiente a cada producto. Define una clave foránea en producto que relacione id_proveedor con proveedores(id_proveedor).
+Añade una columna id_proveedor en la tabla producto para indicar el proveedor correspondiente a 
+cada producto.Define una clave foránea en producto que relacione id_proveedor con proveedores(id_proveedor).
 
 
-Diseña una tabla llamada auditoria_stock para registrar los cambios en el inventario de productos, con la siguiente estructura:
+Diseña una tabla llamada auditoria_stock para registrar los cambios en el inventario de productos, 
+con la siguiente estructura:
 
 id_auditoria (número entero, clave primaria)
 
@@ -42,6 +50,7 @@ Establece una clave foránea en auditoria_stock que relacione id_producto con pr
 
 
 
-Asegúrate de que las restricciones de integridad referencial funcionan correctamente insertando datos de prueba en las tablas proveedores, producto y auditoria_stock. Esta verificación es opcional en esta actividad.
+Asegúrate de que las restricciones de integridad referencial funcionan correctamente insertando datos 
+de prueba en las tablas proveedores, producto y auditoria_stock. Esta verificación es opcional en esta actividad.
 
 Documenta los pasos de creación de cada tabla y las relaciones en un archivo .sql.
