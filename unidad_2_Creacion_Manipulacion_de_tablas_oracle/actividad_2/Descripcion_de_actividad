@@ -1,3 +1,30 @@
 Actividad 2
 
 Inserción, actualización y eliminación de datos en tablas.
+
+
+Instrucciones
+
+1.- Inserta al menos tres registros en la tabla proveedores para reflejar 
+diferentes proveedores de Organic Shop. Asegúrate de incluir datos representativos 
+en cada campo: id_proveedor, nombre_proveedor, telefono, email, y direccion.
+
+
+2.- Actualiza la dirección de uno de los proveedores mediante una consulta UPDATE.
+
+
+3.- Elimina uno de los proveedores de la tabla basándote en el campo id_proveedor. 
+
+
+4.- Inserta al menos tres registros en la tabla auditoria_stock para simular entradas y 
+salidas de inventario de productos. Incluye valores para id_auditoria, id_producto, fecha_cambio, 
+tipo_cambio, cantidad_cambiada, y observaciones. 
+
+
+5.- Realiza una actualización en la tabla auditoria_stock para cambiar el campo observaciones 
+de uno de los registros. 
+
+
+6.- Utiliza una consulta DELETE para eliminar uno de los registros de la tabla auditoria_stock.
+Elige uno de los registros basándote en el campo id_auditoria.
+
